@@ -15,7 +15,7 @@ export default function Component() {
         <div className="container flex h-14 items-center pl-8">
           <div className="mr-4 flex">
             <Link href="#" className="mr-6 flex items-center space-x-2">
-              <span className="font-bold">Wesley Jennings...</span>
+              <span className="font-bold">Wesley Jennings</span>
             </Link>
           </div>
           <nav className="flex items-center space-x-6 text-sm font-medium">
