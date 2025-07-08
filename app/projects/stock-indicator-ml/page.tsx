@@ -8,7 +8,7 @@ import Image from "next/image"
 
 export default function StockIndicatorML() {
   return (
-    <div className="container py-8 px-8 max-w-4xl">
+    <div className="w-full py-8 px-8 max-w-4xl">
       {/* Hero Section */}
       <div className="space-y-4 mb-8">
         <h1 className="text-4xl font-bold tracking-tighter">Stock Indicator ML</h1>

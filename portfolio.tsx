@@ -36,7 +36,7 @@ export default function Component() {
       </header>
 
       {/* Hero Section */}
-      <section className="container py-24 md:py-32">
+      <section className="w-full py-24 md:py-32">
         <div className="flex flex-col items-center text-center space-y-4">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Wesley Jennings</h1>
@@ -58,7 +58,7 @@ export default function Component() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="container py-16">
+      <section id="about" className="w-full py-16">
         <div className="space-y-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tighter">About Me</h2>
@@ -111,7 +111,7 @@ export default function Component() {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="container py-16 bg-muted/50">
+      <section id="education" className="w-full py-16 bg-muted/50">
         <div className="space-y-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Education</h2>
@@ -160,7 +160,7 @@ export default function Component() {
       
 
       {/* Projects Section */}
-      <section id="projects" className="container py-16 px-8">
+      <section id="projects" className="w-full py-16 px-8">
         <div className="space-y-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Projects</h2>
@@ -270,7 +270,7 @@ export default function Component() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="container py-16 bg-muted/50">
+      <section id="contact" className="w-full py-16 bg-muted/50">
         <div className="space-y-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tighter">Get in Touch</h2>
@@ -349,9 +349,9 @@ export default function Component() {
 
       {/* Footer */}
       <footer className="border-t py-6">
-        <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
-          <p className="text-sm text-muted-foreground px-8">© 2024 Wesley Jennings</p>
-          <div className="flex gap-4">
+        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4 px-8">
+          <p className="text-sm text-muted-foreground px-8 md:px-0 md:mr-auto">© 2024 Wesley Jennings</p>
+          <div className="flex gap-4 md:ml-auto">
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://github.com/WesJennings" target="_blank" aria-label="GitHub">
                 <Github className="h-4 w-4" />
