@@ -82,6 +82,43 @@ export default function TcpChat() {
             <li>• Thread-safe persistence of user accounts to disk</li>
           </ul>
         </div>
+
+        <Separator />
+
+        <div>
+          <h3 className="text-xl font-semibold mb-3">Results & Insights</h3>
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-medium">Performance</h4>
+              <p className="text-muted-foreground">
+                Successfully implemmented a multithreaded TCP chat system capable of handling multiple concurrent clients with real-time messaging and presence notifications. 
+                The use of mutexes ensured thread safety and prevented race conditions, resulting in a stable and responsive application.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-medium">Development Insights</h4>
+              <p className="text-muted-foreground">
+                  This was a long term project for my Computer Networks course, and it provided valuable experience in low-level network programming, multithreading, and synchronization techniques.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Project Stats */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <div className="text-2xl font-bold">1 / Client</div>
+            <p className="text-sm text-muted-foreground">Dedicated Thread per Connection</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <div className="text-2xl font-bold">2</div>
+            <p className="text-sm text-muted-foreground">Messaging Modes (Broadcast &amp; Private)</p>
+          </CardContent>
+        </Card>
       </div>
     </div>
   )

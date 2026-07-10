@@ -84,6 +84,43 @@ export default function UnixFilesystem() {
             <li>• Bitmap allocation for efficient tracking of free inodes and blocks</li>
           </ul>
         </div>
+
+        <Separator />
+
+        <div>
+          <h3 className="text-xl font-semibold mb-3">Results & Insights</h3>
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-medium">Performance</h4>
+              <p className="text-muted-foreground">
+                The filesystem successfully supports large files and directories with efficient block allocation, demonstrating the effectiveness of the inode-based design. The use of indirect pointers allows for scalable file sizes without excessive metadata overhead.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-medium">Development Insights</h4>
+              <p className="text-muted-foreground">
+                This was a long term project for my Operating Systems course, and it provided valuable experience in low-level systems programming, memory management, and filesystem design. 
+                Through this project I found a real joy in solving and debugging low level problems, especially the more difficult issues.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Project Stats */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <div className="text-2xl font-bold">256 MB</div>
+            <p className="text-sm text-muted-foreground">Virtual Block Store</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <div className="text-2xl font-bold">3-Level</div>
+            <p className="text-sm text-muted-foreground">Block Addressing</p>
+          </CardContent>
+        </Card>
       </div>
     </div>
   )

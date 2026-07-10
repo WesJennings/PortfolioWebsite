@@ -9,7 +9,7 @@ import Link from "next/link"
 
 export default function Component() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-20">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-14 items-center pl-8">
@@ -43,12 +43,12 @@ export default function Component() {
         <div className="flex flex-col items-center text-center space-y-4">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Wesley Jennings</h1>
-            <p className="text-xl text-muted-foreground md:text-2xl">Backend Software Developer & Computer Science Student</p>
+            <p className="text-xl text-muted-foreground md:text-2xl">Software Engineer/Developer & Computer Science Student</p>
           </div>
           <p className="max-w-[700px] text-lg text-muted-foreground">
             Passionate about building robust software, from backend systems and data pipelines to low-level systems programming.
-            Currently pursuing a Bachelor's in Computer Science with a Mathematics minor, and an accelerated Master's, at the University of Missouri.
-          </p>
+            I currently have a Bachalors in Computer Science and a minor in Mathmatics, and am continuing into a Masters of Computer Science program at the University of Missouri - Columbia.
+           </p>
           <div className="flex gap-4">
             <Button asChild>
               <Link href="#projects">View Projects</Link>
@@ -134,9 +134,11 @@ export default function Component() {
                 <CardDescription>University of Missouri - Columbia • Expected May 2027</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
-                  Pursuing an accelerated Master's degree, earning graduate credit concurrently with my undergraduate studies.
-                </p>
+                <div className="space-y-2">
+                  <p>
+                    <strong>Relevant Coursework:</strong> Parallel Programming (HPC), Artificial Intelligence, Software Security
+                  </p>
+                </div>
               </CardContent>
             </Card>
 
@@ -144,7 +146,7 @@ export default function Component() {
               <CardHeader>
                 <CardTitle>Bachelor of Science in Computer Science</CardTitle>
                 <CardSubTitle>Minor in Mathematics</CardSubTitle>
-                <CardDescription>University of Missouri - Columbia • Expected May 2026</CardDescription>
+                <CardDescription>University of Missouri - Columbia • Graduated May 2026</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-2">
@@ -152,9 +154,9 @@ export default function Component() {
                     <strong>Cumulative GPA:</strong> 3.85/4.0
                   </p>
                   <p>
-                    <strong>Relevant Coursework:</strong> Algorithm Design 1-3, Parallel Programming (HPC), Operating Systems,
-                    Computer Networks, Object-Oriented Programming, Calculus I - III, Differential Equations, Machine Learning,
-                    Software Security, Artificial Intelligence, Computer Org and Assembly Language, Database Application and Info Systems
+                    <strong>Relevant Coursework:</strong> Algorithm Design 1-3, Operating Systems, Computer Networks,
+                    Object-Oriented Programming, Calculus I - III, Differential Equations, Machine Learning,
+                    Computer Org and Assembly Language, Database Application and Info Systems
                   </p>
                 </div>
               </CardContent>
@@ -510,7 +512,7 @@ export default function Component() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t py-6">
+      <footer className="fixed bottom-0 left-0 right-0 z-50 border-t py-4 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4 px-8">
           <p className="text-sm text-muted-foreground px-8 md:px-0 md:mr-auto">© 2026 Wesley Jennings</p>
           <div className="flex gap-4 md:ml-auto">

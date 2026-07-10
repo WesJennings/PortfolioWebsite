@@ -84,6 +84,43 @@ export default function NbaSpreadPrediction() {
             <li>• Confidence scoring and risk flagging to communicate uncertainty on every pick</li>
           </ul>
         </div>
+
+        <Separator />
+
+        <div>
+          <h3 className="text-xl font-semibold mb-3">Results & Insights</h3>
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-medium">Performance</h4>
+              <p className="text-muted-foreground">
+                  Due to time constraints we were unable to test the model intensively. However, for a set of 11 NBA playoff games the model produced 7 correct picks. 
+              </p>
+            </div>
+            <div>
+              <h4 className="font-medium">Development Insights</h4>
+              <p className="text-muted-foreground">
+                This was my Computer Science capstone project along with 3 other classmates. We all enjoyed sports, machine learning, and AI so we decided to combine all of those interests into a single project.
+                This project was a great opportunity to learn about an entire machine learning and AI pipeline, from data ingestion and cleaning, to model training and evaluation, to deployment and user interface design.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Project Stats */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <div className="text-2xl font-bold">4</div>
+            <p className="text-sm text-muted-foreground">Statistical Models Combined</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="pt-6 text-center">
+            <div className="text-2xl font-bold">L1 &amp; L2</div>
+            <p className="text-sm text-muted-foreground">Logistic Regression</p>
+          </CardContent>
+        </Card>
       </div>
     </div>
   )
