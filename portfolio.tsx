@@ -9,7 +9,7 @@ import Link from "next/link"
 
 export default function Component() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-20">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-14 items-center pl-8">
@@ -24,6 +24,9 @@ export default function Component() {
             </Link>
             <Link href="#education" className="transition-colors hover:text-foreground/80">
               Education
+            </Link>
+            <Link href="#experience" className="transition-colors hover:text-foreground/80">
+              Experience
             </Link>
             <Link href="#projects" className="transition-colors hover:text-foreground/80">
               Projects
@@ -40,12 +43,12 @@ export default function Component() {
         <div className="flex flex-col items-center text-center space-y-4">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Wesley Jennings</h1>
-            <p className="text-xl text-muted-foreground md:text-2xl">Software Engineer & Computer Science Student</p>
+            <p className="text-xl text-muted-foreground md:text-2xl">Software Engineer/Developer & Computer Science Student</p>
           </div>
           <p className="max-w-[700px] text-lg text-muted-foreground">
-            Passionate about creating innovative solutions through code. Currently pursuing a Bacholors in Computer Science and dual credits towards
-            a Master's, with a minor in Mathematics.
-          </p>
+            Passionate about building robust software, from backend systems and data pipelines to low-level systems programming.
+            I currently have a Bachalors in Computer Science and a minor in Mathmatics, and am continuing into a Masters of Computer Science program at the University of Missouri - Columbia.
+           </p>
           <div className="flex gap-4">
             <Button asChild>
               <Link href="#projects">View Projects</Link>
@@ -69,9 +72,10 @@ export default function Component() {
               <CardContent className="pt-6">
                 <p className="text-lg leading-relaxed">
                   I'm a dedicated Computer Science student with a passion for solving complex problems through
-                  technology. My experience spans machine learning, game development, and web development
-                  projects. I enjoy working in collaborative environments and am always eager for challenges and to learn new technologies
-                  and methodologies.
+                  technology. My experience spans backend development, systems programming, machine learning, and
+                  distributed computing, from enterprise Java and Spring Boot data pipelines to filesystems and
+                  networking in C/C++. I enjoy working in collaborative environments and am always eager for challenges
+                  and to learn new technologies and methodologies.
                 </p>
                 <div className="mt-6">
                   <h3 className="font-semibold mb-3">Languages</h3>
@@ -86,8 +90,12 @@ export default function Component() {
                   </div>
                 </div>
                 <div className="mt-6">
-                  <h3 className="font-semibold mb-3">Technologies/Frameworks</h3>
+                  <h3 className="font-semibold mb-3">Frameworks & Libraries</h3>
                   <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary">Spring Boot</Badge>
+                    <Badge variant="secondary">Spring Batch</Badge>
+                    <Badge variant="secondary">Hibernate</Badge>
+                    <Badge variant="secondary">Apache PDFBox</Badge>
                     <Badge variant="secondary">HTML</Badge>
                     <Badge variant="secondary">CSS</Badge>
                   </div>
@@ -96,10 +104,12 @@ export default function Component() {
                   <h3 className="font-semibold mb-3">Databases</h3>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">SQL</Badge>
+                    <Badge variant="secondary">Oracle</Badge>
+                    <Badge variant="secondary">PostgreSQL</Badge>
                   </div>
                 </div>
                 <div className="mt-6">
-                  <h3 className="font-semibold mb-3">DevOps Technologies</h3>
+                  <h3 className="font-semibold mb-3">Tools & DevOps</h3>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">Git</Badge>
                   </div>
@@ -120,22 +130,33 @@ export default function Component() {
           <div className="max-w-3xl mx-auto space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle>Bachelor of Science in Computer Science</CardTitle>
-                <CardSubTitle>Minor in Mathematics</CardSubTitle>
-                <CardDescription>University of Missouri - Columbia • Aug 2023 - May 2025 (Expected)</CardDescription>
+                <CardTitle>Accelerated Master's of Computer Science</CardTitle>
+                <CardDescription>University of Missouri - Columbia • Expected May 2027</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-2">
                   <p>
-                    <strong>Cumulative GPA:</strong> 3.857/4.0
+                    <strong>Relevant Coursework:</strong> Parallel Programming (HPC), Artificial Intelligence, Software Security
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Bachelor of Science in Computer Science</CardTitle>
+                <CardSubTitle>Minor in Mathematics</CardSubTitle>
+                <CardDescription>University of Missouri - Columbia • Graduated May 2026</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2">
+                  <p>
+                    <strong>Cumulative GPA:</strong> 3.85/4.0
                   </p>
                   <p>
-                    <strong>Relevant Coursework:</strong> Object Oriented Programming - Java, Calculus I - III, Differential Equations, 
-                    Algorithm Design 1-3 - C, Intro to Machine Learning, Web Application Dev 1, Computer Org and Assembly Language, 
-                    Database Application and Info Systems, Public Speaking
-                  </p>
-                  <p>
-                    <strong>Honors:</strong> High Dean's List (Fall 2023, Spring 2024, Fall 2024, Spring 2025)
+                    <strong>Relevant Coursework:</strong> Algorithm Design 1-3, Operating Systems, Computer Networks,
+                    Object-Oriented Programming, Calculus I - III, Differential Equations, Machine Learning,
+                    Computer Org and Assembly Language, Database Application and Info Systems
                   </p>
                 </div>
               </CardContent>
@@ -159,6 +180,75 @@ export default function Component() {
       </section>
       
 
+      {/* Experience Section */}
+      <section id="experience" className="w-full py-16">
+        <div className="space-y-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tighter">Experience</h2>
+            <p className="text-muted-foreground mt-2">Where I've worked</p>
+          </div>
+          <div className="max-w-3xl mx-auto space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Backend Software Developer Intern</CardTitle>
+                <CardSubTitle>NISC (National Information Solutions Cooperative)</CardSubTitle>
+                <CardDescription>May 2026 - Aug 2026</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div>
+                  <h4 className="font-semibold">Oracle-to-PostgreSQL Migration</h4>
+                  <div className="flex flex-wrap gap-1 my-2">
+                    <Badge variant="outline" className="text-xs">Java</Badge>
+                    <Badge variant="outline" className="text-xs">Spring Boot</Badge>
+                    <Badge variant="outline" className="text-xs">Spring Batch</Badge>
+                    <Badge variant="outline" className="text-xs">Hibernate</Badge>
+                    <Badge variant="outline" className="text-xs">Apache PDFBox</Badge>
+                  </div>
+                  <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+                    <li>
+                      Replaced a legacy Crystal Reports batch job with a Spring Boot / Spring Batch application, using
+                      Hibernate ScrollableResults to stream across five joined entities for memory-efficient processing on
+                      both Oracle and PostgreSQL.
+                    </li>
+                    <li>
+                      Built a multi-section PDF reporting engine with Apache PDFBox (dynamic grouping, subtotals,
+                      grand-total aggregation, cross-category deduplication), slated for the company's annual year-end processing.
+                    </li>
+                    <li>
+                      Verified cross-engine correctness with JUnit 5 and Testcontainers integration tests against isolated
+                      Oracle and PostgreSQL containers.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Credit-Transfer Provider Priority</h4>
+                  <div className="flex flex-wrap gap-1 my-2">
+                    <Badge variant="outline" className="text-xs">Java</Badge>
+                    <Badge variant="outline" className="text-xs">SQL</Badge>
+                    <Badge variant="outline" className="text-xs">Bash</Badge>
+                  </div>
+                  <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+                    <li>
+                      Refactored a legacy Java billing module by swapping integer-based dispatch for a polymorphic enum,
+                      extracting shared loops to remove redundant SQL, and eliminating mutable inter-method state, cutting
+                      code volume ~40% with verified behavioral parity to production.
+                    </li>
+                    <li>
+                      Implemented configurable provider-priority ordering for credit-transfer targets, combining SQL-driven
+                      ranking with an extensible class hierarchy for override behavior.
+                    </li>
+                    <li>
+                      Developed a Bash script to automate credit-transfer batch runs, integrated into the company's year-end
+                      processing pipeline.
+                    </li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="w-full py-16 px-8">
         <div className="space-y-8">
@@ -167,6 +257,80 @@ export default function Component() {
             <p className="text-muted-foreground mt-2">Some of my recent work</p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <Link href="/projects/nba-spread-prediction">
+              <Card className="cursor-pointer transition-all hover:shadow-lg hover:-translate-y-1">
+                <CardHeader>
+                  <CardTitle>NBA Spread Prediction Model</CardTitle>
+                  <CardDescription>
+                    A multi-model NBA spread analysis pipeline combining statistical edge models with a GPT synthesis layer for game predictions.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-1 mb-3">
+                    <Badge variant="outline" className="text-xs">Python</Badge>
+                    <Badge variant="outline" className="text-xs">Scikit-Learn</Badge>
+                    <Badge variant="outline" className="text-xs">GPT-4.1</Badge>
+                    <Badge variant="outline" className="text-xs">PostgreSQL</Badge>
+                    <Badge variant="outline" className="text-xs">Tkinter</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link href="/projects/unix-filesystem">
+              <Card className="cursor-pointer transition-all hover:shadow-lg hover:-translate-y-1">
+                <CardHeader>
+                  <CardTitle>Unix-Style Filesystem</CardTitle>
+                  <CardDescription>
+                    An inode-based filesystem built from scratch in C over a 256 MB virtual block store, with persistent storage and a POSIX-like API.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-1 mb-3">
+                    <Badge variant="outline" className="text-xs">C</Badge>
+                    <Badge variant="outline" className="text-xs">Systems Programming</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link href="/projects/tcp-chat">
+              <Card className="cursor-pointer transition-all hover:shadow-lg hover:-translate-y-1">
+                <CardHeader>
+                  <CardTitle>Multi-Client TCP Chat</CardTitle>
+                  <CardDescription>
+                    A multithreaded TCP chat server and client in C++ with Winsock2, supporting broadcast and private messaging with real-time presence.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-1 mb-3">
+                    <Badge variant="outline" className="text-xs">C++</Badge>
+                    <Badge variant="outline" className="text-xs">Winsock2</Badge>
+                    <Badge variant="outline" className="text-xs">Multithreading</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link href="/projects/beowulf-cluster">
+              <Card className="cursor-pointer transition-all hover:shadow-lg hover:-translate-y-1">
+                <CardHeader>
+                  <CardTitle>Homemade Beowulf Cluster</CardTitle>
+                  <CardDescription>
+                    A commodity Beowulf cluster built from old desktops and laptops, running distributed MPI jobs across nodes over an NFS-shared filesystem.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-1 mb-3">
+                    <Badge variant="outline" className="text-xs">Linux</Badge>
+                    <Badge variant="outline" className="text-xs">C</Badge>
+                    <Badge variant="outline" className="text-xs">MPI / MPICH</Badge>
+                    <Badge variant="outline" className="text-xs">NFS</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
             <Link href="/projects/stock-indicator-ml">
               <Card className="cursor-pointer transition-all hover:shadow-lg hover:-translate-y-1">
                 <CardHeader>
@@ -348,9 +512,9 @@ export default function Component() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t py-6">
+      <footer className="fixed bottom-0 left-0 right-0 z-50 border-t py-4 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4 px-8">
-          <p className="text-sm text-muted-foreground px-8 md:px-0 md:mr-auto">© 2024 Wesley Jennings</p>
+          <p className="text-sm text-muted-foreground px-8 md:px-0 md:mr-auto">© 2026 Wesley Jennings</p>
           <div className="flex gap-4 md:ml-auto">
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://github.com/WesJennings" target="_blank" aria-label="GitHub">
